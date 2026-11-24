@@ -116,6 +116,27 @@
             <li>Datos de uso de la aplicación (para mejorar el servicio)</li>
         </ul>
 
+        <h3>2.4 Datos de Salud y Nutrición</h3>
+        <p>Si usas las secciones de Salud y Nutrición, la aplicación guarda en tu iCloud lo que cargas: comidas y sus fotos,
+            fotos de progreso y medidas, informes de laboratorio, presión arterial y glucosa, y tu perfil de salud. Con tu permiso,
+            lee de Apple Salud tus entrenamientos, tu gasto calórico, frecuencia cardíaca, sueño y presión arterial. Tu entrenador
+            o tu médico solo ven lo que les compartes al vincularte con ellos.</p>
+
+        <h3>2.5 Inteligencia Artificial (IA)</h3>
+        <p>Algunas funciones usan una IA que procesa <strong>Anthropic (Claude)</strong>. Antes del primer uso, la aplicación te
+            muestra qué se envía y te pide permiso; sin tu permiso no se envía nada. Lo que se envía depende de la función que uses,
+            y solo en el momento en que la usas:</p>
+        <ul>
+            <li>Fotos y descripciones de comidas, para estimar calorías y nutrientes</li>
+            <li>AI Coach: tu peso, altura, edad, composición corporal, notas y rutina, para armar una rutina</li>
+            <li>Objetivo de Nutrición: tus datos corporales, lo que vienes comiendo y tu gasto diario promedio según Apple Salud</li>
+            <li>El texto del PDF de un plan de alimentación que importas y las preguntas que le haces a la Ayuda</li>
+            <li>Si eres entrenador y usas la IA para un alumno, se envían los datos de ese alumno</li>
+        </ul>
+        <p>Con la IA incluida, cada pedido pasa por nuestro servidor (alojado en Cloudflare), que lo reenvía a Anthropic. Si cargas
+            tu propia clave de Anthropic, el pedido va directo a Anthropic con tu cuenta. Estos datos se usan solo para responder
+            ese pedido; Anthropic no los usa para entrenar sus modelos. Puedes retirar el permiso en Configuración › La IA.</p>
+
         <h2>3. Cómo Usamos tu Información</h2>
         <p>Utilizamos la información recopilada para:</p>
         <ul>
@@ -150,6 +171,7 @@
         <ul>
             <li><strong>Con tu consentimiento:</strong> Cuando compartes planes con un entrenador, esa persona puede ver y gestionar tus planes de entrenamiento</li>
             <li><strong>Servicios de Apple:</strong> Utilizamos CloudKit y Sign in with Apple, servicios proporcionados por Apple que están sujetos a la Política de Privacidad de Apple</li>
+            <li><strong>IA (Anthropic):</strong> Solo si aceptas el permiso de la IA y usas una de sus funciones, los datos de esa función se envían a Anthropic a través de nuestro servidor en Cloudflare (ver 2.5)</li>
             <li><strong>Requisitos legales:</strong> Si la ley lo requiere o para proteger nuestros derechos legales</li>
         </ul>
 
@@ -175,7 +197,7 @@
             <li><strong>Corregir:</strong> Actualizar o corregir información incorrecta</li>
             <li><strong>Eliminar:</strong> Solicitar la eliminación de tus datos personales</li>
             <li><strong>Exportar:</strong> Exportar tus datos en formato CSV desde la aplicación</li>
-            <li><strong>Retirar consentimiento:</strong> Dejar de compartir planes con entrenadores en cualquier momento</li>
+            <li><strong>Retirar consentimiento:</strong> Dejar de compartir planes con entrenadores en cualquier momento, y retirar el permiso de la IA en Configuración › La IA</li>
         </ul>
         <p>
             Para ejercer estos derechos, puedes contactarnos a través del email de soporte o eliminar 
@@ -208,6 +230,9 @@
         <ul>
             <li><strong>Apple CloudKit:</strong> Para sincronización de datos. Su uso está sujeto a la Política de Privacidad de Apple</li>
             <li><strong>Sign in with Apple:</strong> Para autenticación. Su uso está sujeto a la Política de Privacidad de Apple</li>
+            <li><strong>Apple Salud (HealthKit):</strong> Solo lectura, con tu permiso. Los datos de Apple Salud no se usan para publicidad</li>
+            <li><strong>Anthropic (Claude):</strong> Procesa los pedidos a la IA, solo con tu permiso. Su uso está sujeto a las condiciones y la Política de Privacidad de Anthropic</li>
+            <li><strong>Cloudflare:</strong> Aloja nuestro servidor de la IA, que reenvía cada pedido a Anthropic sin guardarlo</li>
         </ul>
         <p>
             Estos servicios tienen sus propias políticas de privacidad. Te recomendamos leerlas para entender 
